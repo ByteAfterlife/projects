@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-11-29T09:43:59-06:00</updated>
+    <updated>2025-11-29T09:53:13-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -242,6 +242,10 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
                 
   <p>
     I've been using docker for a while now, docker compose, I have at least 20 images. Docker is a VERY awesome software for managing servers. I used it to setup my <a href="https://byteafterlife.github.io/projects/my-obsession-with-sso.html">Keycloak</a>&nbsp;systems, I even once made my own docker image that made an API for an app that converted a plaintext token to a JWT because it wouldn't work without one. Making docker images involves a Dockerfile, which is in my opinion its own programming language. Anyway, once I started with docker, I can't leave. I ran a <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble.html">Mumble server with it</a>, Keycloak as mentioned before, local image converter, text decoder and decryption, <a href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud.html">nextcloud</a>, wireguard, LDAP servers, and even a drawing app (I love you excalidraw)
+  </p>
+
+  <p>
+    In summary what docker does is basically you run server apps in containers which locks them to only be able to use the files and computer resources and ports you allow it, you're basically locking down a server application into a certain environment
   </p>
             ]]>
         </content>
