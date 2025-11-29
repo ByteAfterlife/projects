@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://byteafterlife.github.io/projects/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://byteafterlife.github.io/projects/</loc>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/my-first-kinda-business.html</loc>
+<lastmod>2025-11-29T08:28:41-06:00</lastmod>
+<image:image>
+<image:loc>https://byteafterlife.github.io/projects/media/posts/2/Untitled-2025-11-07-1048.png</image:loc>
+<image:title><![CDATA[A screenshot of a email sent to my dad confirming his order]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble.html</loc>
+<lastmod>2025-11-29T09:43:59-06:00</lastmod>
+<image:image>
+<image:loc>https://byteafterlife.github.io/projects/media/posts/5/Untitled-2025-11-07-1050.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://byteafterlife.github.io/projects/media/posts/5/Screenshot-from-2025-11-29-08-52-00.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/my-obsession-with-sso.html</loc>
+<lastmod>2025-11-29T08:34:15-06:00</lastmod>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/networking.html</loc>
+<lastmod>2025-11-29T09:32:51-06:00</lastmod>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/page/2/</loc>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud.html</loc>
+<lastmod>2025-11-29T08:41:41-06:00</lastmod>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/the-docker-rabbit-hole.html</loc>
+<lastmod>2025-11-29T08:45:14-06:00</lastmod>
+</url>
+<url>
+<loc>https://byteafterlife.github.io/projects/using-linux-as-my-main-os-for-the-first-time.html</loc>
+<lastmod>2025-11-29T09:36:31-06:00</lastmod>
+<image:image>
+<image:loc>https://byteafterlife.github.io/projects/media/posts/7/Untitled-2025-11-07-1049.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+</urlset>
