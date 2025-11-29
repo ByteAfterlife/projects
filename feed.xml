@@ -14,8 +14,8 @@
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/using-linux-as-my-main-os-for-the-first-time.html"/>
-        <id>https://byteafterlife.github.io/projects/using-linux-as-my-main-os-for-the-first-time.html</id>
+        <link href="https://byteafterlife.github.io/projects/using-linux-as-my-main-os-for-the-first-time/"/>
+        <id>https://byteafterlife.github.io/projects/using-linux-as-my-main-os-for-the-first-time/</id>
 
         <updated>2025-11-29T09:09:20-06:00</updated>
             <summary type="html">
@@ -46,8 +46,8 @@
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/networking.html"/>
-        <id>https://byteafterlife.github.io/projects/networking.html</id>
+        <link href="https://byteafterlife.github.io/projects/networking/"/>
+        <id>https://byteafterlife.github.io/projects/networking/</id>
 
         <updated>2025-11-29T08:46:20-06:00</updated>
             <summary type="html">
@@ -145,8 +145,8 @@
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble.html"/>
-        <id>https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble.html</id>
+        <link href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/"/>
+        <id>https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/</id>
         <media:content url="https://byteafterlife.github.io/projects/media/posts/5/Untitled-2025-11-07-1050.jpg" medium="image" />
 
         <updated>2025-11-29T08:44:34-06:00</updated>
@@ -165,7 +165,7 @@
   </p>
 
   <p>
-    I woke up one day (yesterday), and as someone who loves open source and self hosting, I decided to run my own Mumble server, If you don't know what Mumble is, it's basically this server code that you run to make your own voice call server that others can talk on. Now I've run plenty of servers before that are only accessible on my LAN. Simplified, the way networking works (if you wanna know in more detail, read <a href="https://byteafterlife.github.io/projects/networking.html">this post</a>) is unless you change some settings on your router, any server your computer runs cannot be seen by the rest of the world, it can only be accessed on people that are on the same network (are connected to the same wifi as you or ethernet or whatever you use to connect) as you. If not, they cannot access it. But, today I decided is the day I make it accessible anywhere. Firstly, I setup the Mumble server itself with <a href="https://byteafterlife.github.io/projects/the-docker-rabbit-hole.html">Docker</a>, then I tested it. It works. Now was the hard part, the part I never did before. To those who have done this before, it may seem small, but this was my first time, it was really exciting! So I went into my parents router settings (they don't mind), and looked up how to setup port forwarding on my router model (it was pretty complicated) but eventually it worked! I had to make a "custom service," specify ports, connect it to my computer through some weird UI, but in the end, I did it! I got it so if you connect to port&nbsp;64738 (default mumble port) through my public IP (the magical number the world uses to connect to your servers and router) it routes you to my computer's mumble server! Perfect.
+    I woke up one day (yesterday), and as someone who loves open source and self hosting, I decided to run my own Mumble server, If you don't know what Mumble is, it's basically this server code that you run to make your own voice call server that others can talk on. Now I've run plenty of servers before that are only accessible on my LAN. Simplified, the way networking works (if you wanna know in more detail, read <a href="https://byteafterlife.github.io/projects/networking/">this post</a>) is unless you change some settings on your router, any server your computer runs cannot be seen by the rest of the world, it can only be accessed on people that are on the same network (are connected to the same wifi as you or ethernet or whatever you use to connect) as you. If not, they cannot access it. But, today I decided is the day I make it accessible anywhere. Firstly, I setup the Mumble server itself with <a href="https://byteafterlife.github.io/projects/the-docker-rabbit-hole/">Docker</a>, then I tested it. It works. Now was the hard part, the part I never did before. To those who have done this before, it may seem small, but this was my first time, it was really exciting! So I went into my parents router settings (they don't mind), and looked up how to setup port forwarding on my router model (it was pretty complicated) but eventually it worked! I had to make a "custom service," specify ports, connect it to my computer through some weird UI, but in the end, I did it! I got it so if you connect to port&nbsp;64738 (default mumble port) through my public IP (the magical number the world uses to connect to your servers and router) it routes you to my computer's mumble server! Perfect.
   </p>
 
     <figure class="post__image post__image--center">
@@ -174,7 +174,7 @@
     </figure>
 
   <p>
-    But now here's another problem.. most home routers change your public IP, that's bad. By the way, this mumble server was just for me and my family to decentralise from corporations and whatnot. So if the public IP changed, my family would need to change it all on their computers too, that would be annoying and a waste of time. So I realized something. You know domains right? Like example.com, or example.org, well, those are kind of aliases for IP addresses, like google.com is pointing to 142.250.191.142 as of the time I'm writing this,&nbsp;142.250.191.142 is google's public IP right now, don't believe me? Go open your browser, and type&nbsp;142.250.191.142 as the URL. Magic right? Nope, just <a href="https://byteafterlife.github.io/projects/networking.html">networking</a>&nbsp;basics. So anyway, the thing is.. these aliases can change. So what if instead of asking my family to use the public IP of my router as the address to connect to the Mumble server and have to manually change it everytime my router changes it's public IP, what if instead, I just got a domain, and anytime the public IP changed, I update the IP the domain is pointing to. This is actually a popular concept known as "Dynamic DNS" which from what I understood does exactly what I needed. Well, here's the problem, domains cost money. But, theres a free service that allows you to get free subdomains. So I got all the puzzle peices now! I got a domain, my port forwarding setup, the mumble server works. Now I just need to setup the domain and everything should work, right? Well, you'll find out later. So I made the domain record, setup Dynamic DNS by making a quick script that gets my public IP every 15 minutes, and sends it to the domain, if it changed, the domain forwards to my new public IP, if not, nothing changes. That's basically dynamic DNS, here's my script if you want. I had to censor alot because it includes login credentials and other private stuff.
+    But now here's another problem.. most home routers change your public IP, that's bad. By the way, this mumble server was just for me and my family to decentralise from corporations and whatnot. So if the public IP changed, my family would need to change it all on their computers too, that would be annoying and a waste of time. So I realized something. You know domains right? Like example.com, or example.org, well, those are kind of aliases for IP addresses, like google.com is pointing to 142.250.191.142 as of the time I'm writing this,&nbsp;142.250.191.142 is google's public IP right now, don't believe me? Go open your browser, and type&nbsp;142.250.191.142 as the URL. Magic right? Nope, just <a href="https://byteafterlife.github.io/projects/networking/">networking</a>&nbsp;basics. So anyway, the thing is.. these aliases can change. So what if instead of asking my family to use the public IP of my router as the address to connect to the Mumble server and have to manually change it everytime my router changes it's public IP, what if instead, I just got a domain, and anytime the public IP changed, I update the IP the domain is pointing to. This is actually a popular concept known as "Dynamic DNS" which from what I understood does exactly what I needed. Well, here's the problem, domains cost money. But, theres a free service that allows you to get free subdomains. So I got all the puzzle peices now! I got a domain, my port forwarding setup, the mumble server works. Now I just need to setup the domain and everything should work, right? Well, you'll find out later. So I made the domain record, setup Dynamic DNS by making a quick script that gets my public IP every 15 minutes, and sends it to the domain, if it changed, the domain forwards to my new public IP, if not, nothing changes. That's basically dynamic DNS, here's my script if you want. I had to censor alot because it includes login credentials and other private stuff.
   </p>
 <pre class="line-numbers  language-html"><code>  #!/bin/bash
 USERNAME="(secret)"
@@ -201,8 +201,8 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud.html"/>
-        <id>https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud.html</id>
+        <link href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/"/>
+        <id>https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/</id>
 
         <updated>2025-11-29T08:41:41-06:00</updated>
             <summary type="html">
@@ -214,7 +214,7 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
             <![CDATA[
                 
   <p>
-    If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning you have full control over it, this concept is known as "self-hosting" which means you control your own data and the application is run on your server/computer or multiple if you have a cluster. Anyway Nextcloud does everything most cloud hosts do, it can store your contacts, calendar, files obviously, and people made lots of extensions that let you store way more, like passwords, make forms even, and so on. It also of course supports SSO, so I made sure to integrate <a href="https://byteafterlife.github.io/projects/my-obsession-with-sso.html">Keycloak</a> with it for easy sign in. It also supports WebDAV, which makes alot of modern file managers support transferring files directly from your file manager, I know, awesome!
+    If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning you have full control over it, this concept is known as "self-hosting" which means you control your own data and the application is run on your server/computer or multiple if you have a cluster. Anyway Nextcloud does everything most cloud hosts do, it can store your contacts, calendar, files obviously, and people made lots of extensions that let you store way more, like passwords, make forms even, and so on. It also of course supports SSO, so I made sure to integrate <a href="https://byteafterlife.github.io/projects/my-obsession-with-sso/">Keycloak</a> with it for easy sign in. It also supports WebDAV, which makes alot of modern file managers support transferring files directly from your file manager, I know, awesome!
   </p>
 
   <p>
@@ -228,8 +228,8 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/the-docker-rabbit-hole.html"/>
-        <id>https://byteafterlife.github.io/projects/the-docker-rabbit-hole.html</id>
+        <link href="https://byteafterlife.github.io/projects/the-docker-rabbit-hole/"/>
+        <id>https://byteafterlife.github.io/projects/the-docker-rabbit-hole/</id>
 
         <updated>2025-11-29T08:38:00-06:00</updated>
             <summary type="html">
@@ -241,7 +241,7 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
             <![CDATA[
                 
   <p>
-    I've been using docker for a while now, docker compose, I have at least 20 images. Docker is a VERY awesome software for managing servers. I used it to setup my <a href="https://byteafterlife.github.io/projects/my-obsession-with-sso.html">Keycloak</a>&nbsp;systems, I even once made my own docker image that made an API for an app that converted a plaintext token to a JWT because it wouldn't work without one. Making docker images involves a Dockerfile, which is in my opinion its own programming language. Anyway, once I started with docker, I can't leave. I ran a <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble.html">Mumble server with it</a>, Keycloak as mentioned before, local image converter, text decoder and decryption, <a href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud.html">nextcloud</a>, wireguard, LDAP servers, and even a drawing app (I love you excalidraw)
+    I've been using docker for a while now, docker compose, I have at least 20 images. Docker is a VERY awesome software for managing servers. I used it to setup my <a href="https://byteafterlife.github.io/projects/my-obsession-with-sso/">Keycloak</a>&nbsp;systems, I even once made my own docker image that made an API for an app that converted a plaintext token to a JWT because it wouldn't work without one. Making docker images involves a Dockerfile, which is in my opinion its own programming language. Anyway, once I started with docker, I can't leave. I ran a <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/">Mumble server with it</a>, Keycloak as mentioned before, local image converter, text decoder and decryption, <a href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/">nextcloud</a>, wireguard, LDAP servers, and even a drawing app (I love you excalidraw)
   </p>
 
   <p>
@@ -255,8 +255,8 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/my-first-kinda-business.html"/>
-        <id>https://byteafterlife.github.io/projects/my-first-kinda-business.html</id>
+        <link href="https://byteafterlife.github.io/projects/my-first-kinda-business/"/>
+        <id>https://byteafterlife.github.io/projects/my-first-kinda-business/</id>
 
         <updated>2025-11-29T08:27:12-06:00</updated>
             <summary type="html">
@@ -287,8 +287,8 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/my-obsession-with-sso.html"/>
-        <id>https://byteafterlife.github.io/projects/my-obsession-with-sso.html</id>
+        <link href="https://byteafterlife.github.io/projects/my-obsession-with-sso/"/>
+        <id>https://byteafterlife.github.io/projects/my-obsession-with-sso/</id>
 
         <updated>2025-11-29T08:19:42-06:00</updated>
             <summary type="html">
@@ -304,7 +304,7 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
   </p>
 
   <p>
-    You can setup SAML and OIDC clients so easily, and they even integrate with LDAP and Kerberos. One time I used Keycloak is with my <a href="https://byteafterlife.github.io/projects/my-first-kinda-business.html">inventory tracker</a>, I had some other family related apps, and I got them to use Keycloak to sign in with one password into all of them. It made it way more convenient for them. I also of course used it with docker because I was then and still am currently obsessed with docker.
+    You can setup SAML and OIDC clients so easily, and they even integrate with LDAP and Kerberos. One time I used Keycloak is with my <a href="https://byteafterlife.github.io/projects/my-first-kinda-business/">inventory tracker</a>, I had some other family related apps, and I got them to use Keycloak to sign in with one password into all of them. It made it way more convenient for them. I also of course used it with docker because I was then and still am currently obsessed with docker.
   </p>
 
   <p>
