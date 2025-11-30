@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-11-29T09:53:13-06:00</updated>
+    <updated>2025-11-29T21:31:31-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -268,7 +268,7 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
             <![CDATA[
                 
   <p>
-    Back at this time, my parents were always running out of paper towels, I know, specific, but listen. I learned something, whenever they get paper towers, they drive 15 minutes to get some more, then I thought "What if, when we go shopping, I buy my own paper towels, then sell them with a 'convenience fee' as a charge for saving them 15 minutes of driving" and it worked SOOO well! In 3 months I made $90, then we had to shut it down because we were moving. Of course, I love tech, so I made an inventory tracker, integrated it with a keycloak server for SSO (I love keycloak) and it was a hit! It even sent out receipt emails to my parents via email, heres a screenshot of a email that got sent to my dad when he bought some paper towel once. I also decided to name it AnPlan because I thought it sounds good.
+    Back at this time, my parents were always running out of paper towels, I know, specific, but listen. I learned something, whenever they get paper towers, they drive 15 minutes to get some more, then I thought "What if, when we go shopping, I buy my own paper towels, store them somewhere in my house, then whenever my parents need them, instead of them driving 15 minutes, I sell them with a 'convenience fee' as a charge for saving them 15 minutes of driving" and it worked SOOO well! In 3 months I made $90, then we had to shut it down because we were moving. Of course, I love tech, so I made a LAN inventory tracker, integrated it with a keycloak server for SSO (I love keycloak) and it was a hit! It even sent out receipt emails to my parents via email, heres a screenshot of a email that got sent to my dad when he bought some paper towel once. I also decided to name it AnPlan because I thought it sounds good.
   </p>
 
     <figure class="post__image post__image--center">
