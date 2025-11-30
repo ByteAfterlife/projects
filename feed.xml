@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-11-30T13:13:04-06:00</updated>
+    <updated>2025-11-30T15:58:37-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -41,6 +41,15 @@
   <p>
     Of course I used docker to keep my docker skills sharp.
   </p>
+
+  <p>
+    Heres a mobile screenshot
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/8/Screenshot_20251130_155702_WireGuard.jpg" height="2340" width="1080" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-xs.jpg 640w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-sm.jpg 768w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-md.jpg 1024w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-lg.jpg 1366w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-xl.jpg 1600w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-2xl.jpg 1920w">
+      
+    </figure>
 
   <p>
     This is now my second worldwide accessible project EVER. And only 3 days after my first one. Woo!
