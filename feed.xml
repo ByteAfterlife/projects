@@ -3,12 +3,51 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-11-29T21:31:31-06:00</updated>
+    <updated>2025-11-30T13:13:04-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
     <id>https://byteafterlife.github.io/projects</id>
 
+    <entry>
+        <title>I made my own VPN (second worldwide project)</title>
+        <author>
+            <name>Byte</name>
+        </author>
+        <link href="https://byteafterlife.github.io/projects/i-made-my-own-vpn/"/>
+        <id>https://byteafterlife.github.io/projects/i-made-my-own-vpn/</id>
+
+        <updated>2025-11-30T13:00:44-06:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Everytime on my phone when I use my Mobile Data, or connect to an open wifi like at an airport or store, people say it's good to use a VPN, now when people think of VPNs they think of something that you pay for and&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    Everytime on my phone when I use my Mobile Data, or connect to an open wifi like at an airport or store, people say it's good to use a VPN, now when people think of VPNs they think of something that you pay for and it masks your IP anywhere you go, that's true, that's what a common VPN does. But, the way VPNs work is basically you pay to be able to connect to a network of computers that are told to forward your network requests (loading a webpage, making a search, logging in, etc) through them. It's actually really easy to make your own VPN server, and it probably costs less too, get a VPS (not a VPN) which is basically your own computer in the cloud that you rent, yes it's still paid, what do you expect. It functions just like you owned a computer at your house, except its in the cloud, now you run VPN software on it (OpenVPN, WireGuard, etc), set it up, connect, and you're done, now anywhere you go, your IP is now of the cloud computer that you're renting. However since I don't get funded for any of my projects, what if instead of running this VPN software on a cloud computer, I ran it on my own? I trust my own wifi router more than some random coffee shop wifi anyway, so I setup my very own WireGuard server, and then configured it on my phone, yes by the way I had to also setup port forwarding and firewalls, I'm trying to expand my knowledge of port forwarding and know better at making worldwide accessible servers from my computer, like the <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/">Mumble server</a> I made 2 days ago, which also involved port forwarding and firewall config. Anyway back to WireGuard, now, here's the flow
+  </p>
+
+  <p>
+    My phone connects to mobile data or a public wifi &gt; I turn connect to my laptop's worldwide accessible VPN &gt; Any network traffic I do like searching or loading a webpage is extremely hard to be seen by the admins of the wifi I connected to &gt; My laptop makes the network request using my router at home &gt; router completes the request &gt; sends it to my laptop which sends it back to my phone, done.
+  </p>
+
+  <p>
+    Here's an example if I wanted to search "hi" on google: Phone searches hi (connected to my laptop VPN) &gt; Laptop searches it up using the home Wifi, as if I was at home and I searched "hi" using the home wifi &gt; the router responds and gives me the results &gt; my laptop returns it back to my phone which could be wherever in the world.
+  </p>
+
+  <p>
+    Of course I used docker to keep my docker skills sharp.
+  </p>
+
+  <p>
+    This is now my second worldwide accessible project EVER. And only 3 days after my first one. Woo!
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Using Linux as my Main OS for the first time</title>
         <author>
@@ -214,7 +253,7 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
             <![CDATA[
                 
   <p>
-    If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning you have full control over it, this concept is known as "self-hosting" which means you control your own data and the application is run on your server/computer or multiple if you have a cluster. Anyway Nextcloud does everything most cloud hosts do, it can store your contacts, calendar, files obviously, and people made lots of extensions that let you store way more, like passwords, make forms even, and so on. It also of course supports SSO, so I made sure to integrate <a href="https://byteafterlife.github.io/projects/my-obsession-with-sso/">Keycloak</a> with it for easy sign in. It also supports WebDAV, which makes alot of modern file managers support transferring files directly from your file manager, I know, awesome!
+    If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning you have full control over it, this concept is known as "self-hosting" which means you control your own data and the application is run on your server/computer or multiple if you have a cluster. Anyway Nextcloud does everything most cloud hosts do, it can store your contacts, calendar, files obviously, and people made lots of extensions that let you store way more, like passwords, make forms even, and so on. It also of course supports SSO, so I made sure to integrate <a href="https://byteafterlife.github.io/projects/i-love-keycloak/">Keycloak</a> with it for easy sign in. It also supports WebDAV, which makes alot of modern file managers support transferring files directly from your file manager, I know, awesome!
   </p>
 
   <p>
@@ -241,7 +280,7 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
             <![CDATA[
                 
   <p>
-    I've been using docker for a while now, docker compose, I have at least 20 images. Docker is a VERY awesome software for managing servers. I used it to setup my <a href="https://byteafterlife.github.io/projects/my-obsession-with-sso/">Keycloak</a>&nbsp;systems, I even once made my own docker image that made an API for an app that converted a plaintext token to a JWT because it wouldn't work without one. Making docker images involves a Dockerfile, which is in my opinion its own programming language. Anyway, once I started with docker, I can't leave. I ran a <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/">Mumble server with it</a>, Keycloak as mentioned before, local image converter, text decoder and decryption, <a href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/">nextcloud</a>, wireguard, LDAP servers, and even a drawing app (I love you excalidraw)
+    I've been using docker for a while now, docker compose, I have at least 20 images. Docker is a VERY awesome software for managing servers. I used it to setup my <a href="https://byteafterlife.github.io/projects/i-love-keycloak/">Keycloak</a>&nbsp;systems, I even once made my own docker image that made an API for an app that converted a plaintext token to a JWT because it wouldn't work without one. Making docker images involves a Dockerfile, which is in my opinion its own programming language. Anyway, once I started with docker, I can't leave. I ran a <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/">Mumble server with it</a>, Keycloak as mentioned before, local image converter, text decoder and decryption, <a href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/">nextcloud</a>, wireguard, LDAP servers, and even a drawing app (I love you excalidraw)
   </p>
 
   <p>
@@ -287,8 +326,8 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
         <author>
             <name>Byte</name>
         </author>
-        <link href="https://byteafterlife.github.io/projects/my-obsession-with-sso/"/>
-        <id>https://byteafterlife.github.io/projects/my-obsession-with-sso/</id>
+        <link href="https://byteafterlife.github.io/projects/i-love-keycloak/"/>
+        <id>https://byteafterlife.github.io/projects/i-love-keycloak/</id>
 
         <updated>2025-11-29T08:19:42-06:00</updated>
             <summary type="html">
