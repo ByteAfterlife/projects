@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-06T10:01:43-06:00</updated>
+    <updated>2025-12-06T12:50:56-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -168,6 +168,10 @@
     </figure>
     </div>
   </div>
+
+  <p>
+    UPDATE: Ok so something was very wrong, any user that joins gets moderator rights... so what I had to do is enable guests, then take a completely different approach. Instead of everyone in my family having an account on LDAP, I just have one, since I guess Jitsi just gives all LDAP users moderator in meetings. But now that guests are enabled, anyone can join the meeting. The only time they cant is when a moderator isn't in the meeting, but if a moderator is in the meeting, they can just join, now I could enable the lobby, which would 100% solve the problem, but what if I forget? Well I just discovered a <a href="https://github.com/jitsi-contrib/prosody-plugins/tree/main/lobby_autostart_on_owner">community made plugin called "lobby_autostart_on_owner"</a>&nbsp;that automatically enables the lobby after a moderator joins to prevent users from joining without a moderator's permission. So the new flow: Only I have an account, the lobby is automatically enabled whenever I join so I don't have to remember to myself. Fine solution for now I guess, I also removed LLDAP completely since all that just for one user account is a bit too much, so now its just internally managed via that prosody internal database I mentioned earlier.
+  </p>
             ]]>
         </content>
     </entry>
