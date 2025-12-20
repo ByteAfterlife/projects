@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://byteafterlife.github.io/projects/ssh-tunneling-is-cooler-than-i-thought/",
+            "url": "https://byteafterlife.github.io/projects/ssh-tunneling-is-cooler-than-i-thought/",
+            "title": "SSH tunneling is cooler than I thought",
+            "summary": "I've known about SSH tunnelling for a long time, I never actually know how it works though. Now I learned how it actually works and it's so much better. Basically how it works is if you want to access things on another computer that are&hellip;",
+            "content_html": "\n  <p>\n    I've known about SSH tunnelling for a long time, I never actually know how it works though. Now I learned how it actually works and it's so much better. Basically how it works is if you want to access things on another computer that are locked down, you can use a program called SSH to make a tunnel into that computer and access the things on it, and it also binds to a port, which is kind of like a room in your computer, and forwards it to another room in the other computer, so lets say on port 8080 on your remote computer, you're hosting a secret website, but it can't be accessed through the internet for whatever reason, or doesn't have HTTPS. You can make an SSH tunnel into the computer, and as long as SSH can be accessed from anywhere, anything on that computer can be accessed from anywhere. It's pretty cool. It also encrypts stuff so if your program can't encrypt connections when needed, like no HTTPS, SSH does it for you.\n  </p>",
+            "author": {
+                "name": "Byte"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-12-20T10:57:54-06:00",
+            "date_modified": "2025-12-20T10:57:54-06:00"
+        },
+        {
             "id": "https://byteafterlife.github.io/projects/i-made-my-own-encoding-language-out-of-shapes/",
             "url": "https://byteafterlife.github.io/projects/i-made-my-own-encoding-language-out-of-shapes/",
             "title": "I made my own encoding language.. out of shapes",
@@ -135,20 +149,6 @@
             ],
             "date_published": "2025-11-29T08:27:12-06:00",
             "date_modified": "2025-11-29T21:31:31-06:00"
-        },
-        {
-            "id": "https://byteafterlife.github.io/projects/i-love-keycloak/",
-            "url": "https://byteafterlife.github.io/projects/i-love-keycloak/",
-            "title": "I love Keycloak",
-            "summary": "Ever since a year ago I've been experimenting with keycloak&nbsp;and oh my it is beautiful! You can setup SAML and OIDC clients so easily, and they even integrate with LDAP and Kerberos. One time I used Keycloak is with my inventory tracker, I had some&hellip;",
-            "content_html": "\n  <p>\n    Ever since a year ago I've been experimenting with <a href=\"https://keycloak.org\" target=\"_blank\">keycloak</a>&nbsp;and oh my it is beautiful!\n  </p>\n\n  <p>\n    You can setup SAML and OIDC clients so easily, and they even integrate with LDAP and Kerberos. One time I used Keycloak is with my <a href=\"https://byteafterlife.github.io/projects/my-first-kinda-business/\">inventory tracker</a>, I had some other family related apps, and I got them to use Keycloak to sign in with one password into all of them. It made it way more convenient for them. I also of course used it with docker because I was then and still am currently obsessed with docker.\n  </p>\n\n  <p>\n    Unlike other open source identity providers like OpenLDAP or Authentik or some others like that, Keycloak is easy to use. I just tell you, it took me an hour entering ldap commands into openldap just to get one more attribute into a user, their fingerprint ID for a system I was making, and I still couldn't get it. In keycloak, it was way easier. I just did Realm Settings &gt; User profile &gt; Create attribute, filled in the fields, and I'm done! I also learned how to retrieve those fields in their API, so in my system it queried the API using a \"service account\" client, it searched for a user based on the fingerprint ID, and found the user's details. In my opinion, if you need a good balance between customizability and simplicity, use Keycloak.\n  </p>\n\n  <p>\n    Have fun!\n  </p>",
-            "author": {
-                "name": "Byte"
-            },
-            "tags": [
-            ],
-            "date_published": "2025-11-29T08:19:42-06:00",
-            "date_modified": "2025-11-30T13:01:18-06:00"
         }
     ]
 }
