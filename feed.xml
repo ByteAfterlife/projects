@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-20T14:45:21-06:00</updated>
+    <updated>2025-12-20T14:46:08-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -65,7 +65,7 @@
   </p>
 
   <p>
-    Either way, as a summary, what happened is when I added those two plugins to the custom plugins folder that I THOUGHT would work, it didn't because CONFIG was set to the wrong folder on my host, it never actually was reading the auto lobby one from the custom plugins folder, which was empty according to it, it was instead reading it from a hard wired folder that was in it, which made me think it was reading it correctly, then when I added a plugin NOT from the contrib repository, since it wasn't hard baked into the image, it didn't even see it in the custom plugins, because it never saw anything in the custom plugins because "${CONFIG}" was set to the wrong value this whole time. Once I changed it to "CONFIG=./" the custom plugins folder was no longer empty, and it saw all my custom plugins again, yay. How confusing. I find it wild that I figured all that out.
+    Either way, as a summary, what happened is when I added those two plugins to the custom plugins folder that I THOUGHT would work, it didn't because CONFIG was set to the wrong folder on my host, it never actually was reading the auto lobby one from the custom plugins folder, which was empty according to it, it was instead reading it from a hard wired folder that was in it, which made me think it was reading it correctly, then when I added a plugin NOT from the contrib repository, since it wasn't hard baked into the image, it didn't even see it in the custom plugins, because it never saw anything in the custom plugins because "${CONFIG}" was set to the wrong value this whole time. Once I changed it to "CONFIG=./" the custom plugins folder was no longer empty, and it saw all my custom plugins again, yay. How confusing. I find it wild that I figured all that out. Also of course, no documentation told me that there was this hard baked folder, and nothing explained how to fix it. So I had to figure all this out myself. And somehow suceeded.
   </p>
             ]]>
         </content>
