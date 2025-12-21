@@ -3,12 +3,48 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-21T09:22:18-06:00</updated>
+    <updated>2025-12-21T13:06:30-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
     <id>https://byteafterlife.github.io/projects</id>
 
+    <entry>
+        <title>My silly access denied page</title>
+        <author>
+            <name>Byte</name>
+        </author>
+        <link href="https://byteafterlife.github.io/projects/my-silly-access-denied-page/"/>
+        <id>https://byteafterlife.github.io/projects/my-silly-access-denied-page/</id>
+
+        <updated>2025-12-21T13:06:30-06:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    I never expected my jitsi setup to get this complicated. Yesterday I had to build a custom auth server for JWT, today I had to setup IP controls. Basically, some weird data center company which I won't be naming keeps trying to access some weird&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    I never expected my jitsi setup to get this complicated. Yesterday I had to build a custom auth server for JWT, today I had to setup IP controls. Basically, some weird data center company which I won't be naming keeps trying to access some weird paths like "/SETTINGS.CFG" or "/MainLogin.asp" which don't even exist and instead make them join a jitsi meeting called "Settings Cfg" and "MainLogin Asp" lmao. So I decided to make my own access denied page once and for all to deal with them.
+  </p>
+
+  <p>
+    See, I'm tired of the boring old 403 pages like "Access denied" or "Failure!" No no no. This is my server, I style it how I want. So I made my access denied page have a personality. Best one I've ever seen. Here's a screenshot
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/13/Screenshot-from-2025-12-21-13-06-07.png" height="1079" width="1919" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-2xl.png 1920w">
+      
+    </figure>
+
+  <p>
+    Like it?
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Jitsi is... complicated. How I fixed it is wild.</title>
         <author>
@@ -530,33 +566,6 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
 
   <p>
     Have fun with Nextcloud.
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>The docker rabbit-hole</title>
-        <author>
-            <name>Byte</name>
-        </author>
-        <link href="https://byteafterlife.github.io/projects/the-docker-rabbit-hole/"/>
-        <id>https://byteafterlife.github.io/projects/the-docker-rabbit-hole/</id>
-
-        <updated>2025-11-29T08:38:00-06:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    I've been using docker for a while now, docker compose, I have at least 20 images. Docker is a VERY awesome software for managing servers. I used it to setup my Keycloak&nbsp;systems, I even once made my own docker image that made an API for&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    I've been using docker for a while now, docker compose, I have at least 20 images. Docker is a VERY awesome software for managing servers. I used it to setup my <a href="https://byteafterlife.github.io/projects/i-love-keycloak/">Keycloak</a>&nbsp;systems, I even once made my own docker image that made an API for an app that converted a plaintext token to a JWT because it wouldn't work without one. Making docker images involves a Dockerfile, which is in my opinion its own programming language. Anyway, once I started with docker, I can't leave. I ran a <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/">Mumble server with it</a>, Keycloak as mentioned before, local image converter, text decoder and decryption, <a href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/">nextcloud</a>, wireguard, LDAP servers, and even a drawing app (I love you excalidraw)
-  </p>
-
-  <p>
-    In summary what docker does is basically you run server apps in containers which locks them to only be able to use the files and computer resources and ports you allow it, you're basically locking down a server application into a certain environment. There's also a thing called docker compose which basically lets you make these apps from a file, like a instruction file automating the setup!
   </p>
             ]]>
         </content>
