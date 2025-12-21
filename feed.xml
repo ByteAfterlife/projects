@@ -3,12 +3,35 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-21T13:06:30-06:00</updated>
+    <updated>2025-12-21T14:23:40-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
     <id>https://byteafterlife.github.io/projects</id>
 
+    <entry>
+        <title>My Jitsi Project is really getting huge (client certificate authentication)</title>
+        <author>
+            <name>Byte</name>
+        </author>
+        <link href="https://byteafterlife.github.io/projects/my-jitsi-project-is-really-getting-huge-client-certificate-authentication/"/>
+        <id>https://byteafterlife.github.io/projects/my-jitsi-project-is-really-getting-huge-client-certificate-authentication/</id>
+
+        <updated>2025-12-21T14:23:26-06:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    So in my last post of the Jitsi series, I explained how I did IP based blocking to control who can connect, but then I realized something. My IP can change, especially on hotspot. Which is bad, because then I wont be able to call&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    So in my <a href="https://byteafterlife.github.io/projects/my-silly-access-denied-page/">last post</a> of the Jitsi series, I explained how I did IP based blocking to control who can connect, but then I realized something. My IP can change, especially on hotspot. Which is bad, because then I wont be able to call on the go, very bad! So what did I do? Well I decided to try client certificate authentication, basically how it works is you basically install a certificate on your device (in this case, my phone) which is a file that basically proves your identity, then when Jitsi asks you to give a certificate, it checks if the certificate you provide was created by me, and if yes, then it grants you access, even if your IP isn't authorized, and if you dont provide a certificate, or dont have (a valid) one, but your IP is authorized, you're allowed access, and finally if your IP isn't authorized and you dont provide a valid certificate, you are just rejected access with my silly block page.
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>My silly access denied page</title>
         <author>
@@ -27,7 +50,7 @@
             <![CDATA[
                 
   <p>
-    I never expected my jitsi setup to get this complicated. Yesterday I had to build a custom auth server for JWT, today I had to setup IP controls. Basically, some weird data center company which I won't be naming keeps trying to access some weird paths like "/SETTINGS.CFG" or "/MainLogin.asp" which don't even exist and instead make them join a jitsi meeting called "Settings Cfg" and "MainLogin Asp" lmao. So I decided to make my own access denied page once and for all to deal with them.
+    I never expected <a href="https://byteafterlife.github.io/projects/jitsi-is-complicated-how-i-fixed-it-is-wild/">my jitsi setup</a> to get this complicated. Yesterday I had to build a custom auth server for JWT, today I had to setup IP controls. Basically, some weird data center company which I won't be naming keeps trying to access some weird paths like "/SETTINGS.CFG" or "/MainLogin.asp" which don't even exist and instead make them join a jitsi meeting called "Settings Cfg" and "MainLogin Asp" lmao. So I decided to make my own access denied page once and for all to deal with them.
   </p>
 
   <p>
@@ -539,33 +562,6 @@ curl -k "https://${USERNAME}:${PASSWORD}@(secret)/nic/update?hostname=${DOMAIN}&
 
   <p>
     Now, an even bigger thing I never done before, get an actual certificate! Certificates, in simple, encrypt your connection with websites, almost every uses them, this blog uses it, Google uses it, as I said, almost every website in the world does, it makes sure nobody except the website can see what you're sending to the website, like your name and password, and it makes sure nobody except you can see what the website sent back, like your bank balance or email address or phone number. Certificates can be made with a "custom CA" but devices only trust a specific list of CAs, so what's a CA, again I'm simplifying this but basically it's a trusted organization that issues these certificates, the most popular one for website certificates is Lets Encrypt, they're trusted very very widely. So, I put my domain into lets encrypt and basically asked them for a certificate, this is necessary because it encrypts the voice communication between the mumble server I made and my family so nobody can eavesdrop. Then they told me I need a http server to prove I own the server, which I also had to setup and port forward. But after a whole bunch of work, I got a certificate, I also decided to setup another cron job to renew the certificate everyday at 3am. That's the story of my Mumble server journey. Hope you learned something!
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Sick of cloud storage fees? Try Nextcloud.</title>
-        <author>
-            <name>Byte</name>
-        </author>
-        <link href="https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/"/>
-        <id>https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/</id>
-
-        <updated>2025-11-29T08:41:41-06:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning you have full control over it, this concept is known as "self-hosting" which means you control your own data and the application is run on your server/computer or multiple if you have a cluster. Anyway Nextcloud does everything most cloud hosts do, it can store your contacts, calendar, files obviously, and people made lots of extensions that let you store way more, like passwords, make forms even, and so on. It also of course supports SSO, so I made sure to integrate <a href="https://byteafterlife.github.io/projects/i-love-keycloak/">Keycloak</a> with it for easy sign in. It also supports WebDAV, which makes alot of modern file managers support transferring files directly from your file manager, I know, awesome!
-  </p>
-
-  <p>
-    Have fun with Nextcloud.
   </p>
             ]]>
         </content>

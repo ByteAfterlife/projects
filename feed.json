@@ -10,18 +10,32 @@
     },
     "items": [
         {
+            "id": "https://byteafterlife.github.io/projects/my-jitsi-project-is-really-getting-huge-client-certificate-authentication/",
+            "url": "https://byteafterlife.github.io/projects/my-jitsi-project-is-really-getting-huge-client-certificate-authentication/",
+            "title": "My Jitsi Project is really getting huge (client certificate authentication)",
+            "summary": "So in my last post of the Jitsi series, I explained how I did IP based blocking to control who can connect, but then I realized something. My IP can change, especially on hotspot. Which is bad, because then I wont be able to call&hellip;",
+            "content_html": "\n  <p>\n    So in my <a href=\"https://byteafterlife.github.io/projects/my-silly-access-denied-page/\">last post</a> of the Jitsi series, I explained how I did IP based blocking to control who can connect, but then I realized something. My IP can change, especially on hotspot. Which is bad, because then I wont be able to call on the go, very bad! So what did I do? Well I decided to try client certificate authentication, basically how it works is you basically install a certificate on your device (in this case, my phone) which is a file that basically proves your identity, then when Jitsi asks you to give a certificate, it checks if the certificate you provide was created by me, and if yes, then it grants you access, even if your IP isn't authorized, and if you dont provide a certificate, or dont have (a valid) one, but your IP is authorized, you're allowed access, and finally if your IP isn't authorized and you dont provide a valid certificate, you are just rejected access with my silly block page.\n  </p>",
+            "author": {
+                "name": "Byte"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-12-21T14:23:26-06:00",
+            "date_modified": "2025-12-21T14:23:26-06:00"
+        },
+        {
             "id": "https://byteafterlife.github.io/projects/my-silly-access-denied-page/",
             "url": "https://byteafterlife.github.io/projects/my-silly-access-denied-page/",
             "title": "My silly access denied page",
             "summary": "I never expected my jitsi setup to get this complicated. Yesterday I had to build a custom auth server for JWT, today I had to setup IP controls. Basically, some weird data center company which I won't be naming keeps trying to access some weird&hellip;",
-            "content_html": "\n  <p>\n    I never expected my jitsi setup to get this complicated. Yesterday I had to build a custom auth server for JWT, today I had to setup IP controls. Basically, some weird data center company which I won't be naming keeps trying to access some weird paths like \"/SETTINGS.CFG\" or \"/MainLogin.asp\" which don't even exist and instead make them join a jitsi meeting called \"Settings Cfg\" and \"MainLogin Asp\" lmao. So I decided to make my own access denied page once and for all to deal with them.\n  </p>\n\n  <p>\n    See, I'm tired of the boring old 403 pages like \"Access denied\" or \"Failure!\" No no no. This is my server, I style it how I want. So I made my access denied page have a personality. Best one I've ever seen. Here's a screenshot\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://byteafterlife.github.io/projects/media/posts/13/Screenshot-from-2025-12-21-13-06-07.png\" height=\"1079\" width=\"1919\" alt=\"\"  sizes=\"(max-width: 1920px) 100vw, 1920px\" srcset=\"https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-2xl.png 1920w\">\n      \n    </figure>\n\n  <p>\n    Like it?\n  </p>",
+            "content_html": "\n  <p>\n    I never expected <a href=\"https://byteafterlife.github.io/projects/jitsi-is-complicated-how-i-fixed-it-is-wild/\">my jitsi setup</a> to get this complicated. Yesterday I had to build a custom auth server for JWT, today I had to setup IP controls. Basically, some weird data center company which I won't be naming keeps trying to access some weird paths like \"/SETTINGS.CFG\" or \"/MainLogin.asp\" which don't even exist and instead make them join a jitsi meeting called \"Settings Cfg\" and \"MainLogin Asp\" lmao. So I decided to make my own access denied page once and for all to deal with them.\n  </p>\n\n  <p>\n    See, I'm tired of the boring old 403 pages like \"Access denied\" or \"Failure!\" No no no. This is my server, I style it how I want. So I made my access denied page have a personality. Best one I've ever seen. Here's a screenshot\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://byteafterlife.github.io/projects/media/posts/13/Screenshot-from-2025-12-21-13-06-07.png\" height=\"1079\" width=\"1919\" alt=\"\"  sizes=\"(max-width: 1920px) 100vw, 1920px\" srcset=\"https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/13/responsive/Screenshot-from-2025-12-21-13-06-07-2xl.png 1920w\">\n      \n    </figure>\n\n  <p>\n    Like it?\n  </p>",
             "author": {
                 "name": "Byte"
             },
             "tags": [
             ],
             "date_published": "2025-12-21T13:06:30-06:00",
-            "date_modified": "2025-12-21T13:06:30-06:00"
+            "date_modified": "2025-12-21T14:23:40-06:00"
         },
         {
             "id": "https://byteafterlife.github.io/projects/jitsi-is-complicated-how-i-fixed-it-is-wild/",
@@ -135,20 +149,6 @@
             ],
             "date_published": "2025-11-29T08:44:34-06:00",
             "date_modified": "2025-11-29T09:43:59-06:00"
-        },
-        {
-            "id": "https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/",
-            "url": "https://byteafterlife.github.io/projects/sick-of-cloud-storage-fees-try-nextcloud/",
-            "title": "Sick of cloud storage fees? Try Nextcloud.",
-            "summary": "If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning&hellip;",
-            "content_html": "\n  <p>\n    If you've been on the internet for a bit of time, you probably heard of cloud storage, I won't say names, but their prices can be very expensive in the long run. Well, there's this thing called Nextcloud, which is run on your systems, meaning you have full control over it, this concept is known as \"self-hosting\" which means you control your own data and the application is run on your server/computer or multiple if you have a cluster. Anyway Nextcloud does everything most cloud hosts do, it can store your contacts, calendar, files obviously, and people made lots of extensions that let you store way more, like passwords, make forms even, and so on. It also of course supports SSO, so I made sure to integrate <a href=\"https://byteafterlife.github.io/projects/i-love-keycloak/\">Keycloak</a> with it for easy sign in. It also supports WebDAV, which makes alot of modern file managers support transferring files directly from your file manager, I know, awesome!\n  </p>\n\n  <p>\n    Have fun with Nextcloud.\n  </p>",
-            "author": {
-                "name": "Byte"
-            },
-            "tags": [
-            ],
-            "date_published": "2025-11-29T08:41:41-06:00",
-            "date_modified": "2025-11-29T08:41:41-06:00"
         }
     ]
 }
