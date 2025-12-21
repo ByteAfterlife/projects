@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-20T14:46:08-06:00</updated>
+    <updated>2025-12-21T09:22:18-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -208,6 +208,19 @@
   <p>
     This is a really silly idea I had, if you want to try using it, have fun! Much thanks for reading. Also I know this isn't my usual tech stuff but I found it a fun post to make for those interested in encoding and stuff.
   </p>
+
+  <p>
+    
+  </p>
+
+  <p>
+    UPDATE: I concluded theres no way to add spaces, so like if you wanna add a space, just keep one column empty, so "Hi there" now looks like:
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/10/slupdate.png" height="177" width="338" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/10/responsive/slupdate-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/10/responsive/slupdate-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/10/responsive/slupdate-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/10/responsive/slupdate-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/10/responsive/slupdate-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/10/responsive/slupdate-2xl.png 1920w">
+      
+    </figure>
             ]]>
         </content>
     </entry>
