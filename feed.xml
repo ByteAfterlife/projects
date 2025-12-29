@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-29T09:37:33-06:00</updated>
+    <updated>2025-12-29T10:22:12-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -64,6 +64,10 @@
 
   <p>
     Anyway, then I had to make pages to connect to the database. Making the pages and the leaderboards and the whole database side security was pretty complicated... but what did I expect, this is my first time making this type of app as I said.
+  </p>
+
+  <p>
+    For the leaderboard, if social credit ties, my super duper smart algorithm decides who gets 1st, 2nd, and 3rd place, you're not ready... whichever cat name comes first alphabetically gets the higher place and so on if a tie happens. I know so smart.
   </p>
 
   <p>
