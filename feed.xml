@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-29T09:28:46-06:00</updated>
+    <updated>2025-12-29T09:31:58-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -59,6 +59,10 @@
   </p>
 
   <p>
+    Another issue I ran into was the displaying the owner name under cats, see people couldn't really access the system table used for authentication, so I had to make a bridge function that basically whenever someone signed up (one of my friends) or their discord name changed, it would copy that into a table which sole purpose is just to store their user ID and their display name, and also a value called "can_view" which with RLS I made it so you cant get someones discord username if their can_view is FALSE, at first it was broken, but eventually I got it to work after alot of revisions.
+  </p>
+
+  <p>
     Anyway, then I had to make pages to connect to the database. Making the pages and the leaderboards and the whole database side security was pretty complicated... but what did I expect, this is my first time making this type of app as I said.
   </p>
 
@@ -104,6 +108,10 @@
     </div>
   </div>
 <div><video loading="lazy" src="/projects/media/files/2025-12-29%2009-20-02.mp4"></div>
+
+  <p>
+    Was this worth it? Absolutely! Forget social media platforms we now have cat social credit media.. lol.
+  </p>
             ]]>
         </content>
     </entry>
