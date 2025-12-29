@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-29T09:33:22-06:00</updated>
+    <updated>2025-12-29T09:37:33-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -87,7 +87,7 @@
     Anyway here's some screenshots
   </p>
 
-  <div  class="gallery-wrapper">
+  <div  class="gallery-wrapper gallery-wrapper--full">
     <div class="gallery" data-columns="3">
       <figure class="gallery__item">
       <a href="https://byteafterlife.github.io/projects/media/posts/16/gallery/Untitled-2025-11-07-1048.png" data-size="2482x1405">
@@ -112,6 +112,15 @@
   <p>
     Was this worth it? Absolutely! Forget social media platforms we now have cat social credit media.. lol.
   </p>
+
+  <p>
+    Some P.S. 1. when I was debating whether setting up a policy to only let you make cases about your own cat, I decided not to because if you have an incriminating video of your friends cat (like if it fell off the couch) you can make a case on your friends cat. Also, if you don't attach any evidence for a case (no picture or video) then it just says "Trust me bro" as the evidence hehe
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot-from-2025-12-29-09-36-46.png" height="148" width="346" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-2xl.png 1920w">
+      
+    </figure>
             ]]>
         </content>
     </entry>
