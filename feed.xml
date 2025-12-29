@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-29T09:22:37-06:00</updated>
+    <updated>2025-12-29T09:27:19-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -103,15 +103,7 @@
     </figure>
     </div>
   </div>
-
-    <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/2025-12-29-09-20-02-2.mp4" height="null" width="null" alt="" >
-      
-    </figure>
-
-  <p>
-    
-  </p>
+<div><video loading="lazy" src="/media/files/2025-12-29%2009-20-02.mp4"></div>
             ]]>
         </content>
     </entry>
