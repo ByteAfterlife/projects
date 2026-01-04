@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-04T13:50:39-06:00</updated>
+    <updated>2026-01-04T14:38:44-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -179,6 +179,24 @@
   <p>
     That's all I can think of, I probably made more updates but I can't name them right now. Sorry!
   </p>
+
+  <p>
+    EDIT 3: Jan 4 2026
+  </p>
+
+  <p>
+    The buttons looked ugly so I just changed their colors.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot-from-2026-01-04-14-36-35.png" height="38" width="89" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-36-35-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-36-35-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-36-35-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-36-35-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-36-35-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-36-35-2xl.png 1920w">
+      <figcaption>When not hovering</figcaption>
+    </figure>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot-from-2026-01-04-14-38-10.png" height="29" width="80" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-2xl.png 1920w">
+      <figcaption>When hovering over minimize button</figcaption>
+    </figure>
 
   <p>
     Either way my point with this whole project is 2 things: The silliest projects can teach you so many things (I learned SVG and CSS animation, direct connection to databases without an intermediate server for access control which is actually used in many real world examples, storage buckets and processing user created media, alot of UX, and postgres access control) and that you CAN have fun making apps.
