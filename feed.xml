@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2025-12-29T10:22:12-06:00</updated>
+    <updated>2026-01-04T13:50:39-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -20,12 +20,16 @@
         <updated>2025-12-29T09:22:37-06:00</updated>
             <summary type="html">
                 <![CDATA[
-                    From my many years of dev experience, I've been building apps that follow this logic: Client connects to server &gt; Server does access verification and makes sure you can access what you wnt &gt; The server queries database &gt; Server returns response to client. But&hellip;
+                    EDIT 1: Dec 29 2025 From my many years of dev experience, I've been building apps that follow this logic: Client connects to server &gt; Server does access verification and makes sure you can access what you wnt &gt; The server queries database &gt; Server&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 
+  <p>
+    EDIT 1: Dec 29 2025
+  </p>
+
   <p>
     From my many years of dev experience, I've been building apps that follow this logic: Client connects to server &gt; Server does access verification and makes sure you can access what you wnt &gt; The server queries database &gt; Server returns response to client. But this time, it was different, I had to make the database the server and use RLS and other database stuff for security.
   </p>
@@ -71,7 +75,7 @@
   </p>
 
   <p>
-    I also decided to use discord for login in the end because I didn't feel like storing passwords, and on Cat Index, people can see if you own a cat if you allow it using a setting in the top right.
+    I also decided to use discord for login in the end because I didn't feel like storing passwords, and on Cat Index, people can see that you own a cat if you allow it using a setting in the top right.
   </p>
 
   <p>
@@ -111,7 +115,7 @@
     </figure>
     </div>
   </div>
-<div><video loading="lazy" controls> <source src="/projects/media/files/2025-12-29%2009-20-02.mp4" type="video/mp4"></video  ></div>
+<div><video loading="lazy" controls> <source src="/projects/media/files/2025-12-29%2009-20-02.mp4" type="video/mp4"></video></div>
 
   <p>
     Was this worth it? Absolutely! Forget social media platforms we now have cat social credit media.. lol.
@@ -125,6 +129,64 @@
       <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot-from-2025-12-29-09-36-46.png" height="148" width="346" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2025-12-29-09-36-46-2xl.png 1920w">
       
     </figure>
+
+  <p>
+    EDIT 2: Jan 4 2026
+  </p>
+
+  <p>
+    Some updates (also happy new years!) So I made it so when you make a case or a cat, it also sends it as a Discord webhook into a channel. I also then had to optimize my loading because my storage provider (they store all the cat images and case videos and photos) has a monthly limit on how many times this can be requested, and since we're loading the cat index, leaderboard, and cases, all in the background, even if the user never uses it, we're loading each cat's photo almost 3 times (one for leaderboard, another for index, another for case data) and their social credit score and stuff, that's bad. So I made it so the new "desktop" doesn't load the cat index in the background. Did I mention in the original version, cat index was minimised by default? Anyway, it is. But it's still loaded in the background, so I made it so its not loaded at all until you actually open it (this saved alot of loading usage) and also I made it so the leader board is still open but it doesn't actually load, instead theres a button that says "Load leaderboard" and when you press it then it actually loads the leaderboard and gets the cat images and stuff. I also made a super cool loading animation with a cat logo I drew on the desktop by making an SVG path out of the photo and figuring out how to trace it with an animation, I never done that before either so I'm learning alot with this project. Even design. Anyway this is what the loading animation looks like
+  </p>
+<div><video loading="lazy" controls> <source src="/projects/media/files/2026-01-04%2013-30-46.mp4" type="video/mp4"></video></div>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot-from-2026-01-04-13-35-53.png" height="382" width="600" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-13-35-53-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-13-35-53-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-13-35-53-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-13-35-53-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-13-35-53-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-13-35-53-2xl.png 1920w">
+      <figcaption>Screenshot of the discord webhook messages for case/cat creation</figcaption>
+    </figure>
+
+  <p>
+    I also made it so when uploading a case or cat, while its uploading the photo of the cat or evidence of the case, and while the server is processing the webhook to discord, it says "Uploading" and disables the button so people with slow internet don't think nothing happened and retry the request. Because before it showed no indicator that it was actually doing anything. You clicked upload and it just did nothing until it was done and then showed a confirmation message that it worked.
+  </p>
+
+  <p>
+    I also changed the background color of the cases and cat index to dark gray because its much easier on the eyes than white.
+  </p>
+
+  <p>
+    Here's some more screenshots.
+  </p>
+
+  <div  class="gallery-wrapper gallery-wrapper--wide">
+    <div class="gallery" data-columns="3">
+      <figure class="gallery__item">
+      <a href="https://byteafterlife.github.io/projects/media/posts/16/gallery/Screenshot-from-2026-01-04-13-41-07.png" data-size="926x763">
+        <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/gallery/Screenshot-from-2026-01-04-13-41-07-thumbnail.png" height="593" width="720" alt="" >
+      </a>
+      
+    </figure><figure class="gallery__item">
+      <a href="https://byteafterlife.github.io/projects/media/posts/16/gallery/Screenshot-from-2026-01-04-13-38-14.png" data-size="1563x888">
+        <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/gallery/Screenshot-from-2026-01-04-13-38-14-thumbnail.png" height="409" width="720" alt="" >
+      </a>
+      
+    </figure>
+    </div>
+  </div>
+
+  <p>
+    Another update I realized I needed to make is for case evidence loading, in my original logic, you could make cases on other peoples cat's if you had evidence on them lol. But I realized the way the code loaded the evidence is it assumed the cat owner made the case still. This was because in the cases database table, it only had the case id, when it was made, which cat it was made for, the title, filepath (only the name of the file, not the userid), and the proposed social credit score change. This was ok if only the cat owner was making cases on their cats because the cases index looked up the cat ID in the cats table, then got the owner ID, and assumed the evidence was in the owner of the cat's folder, but since others could make cases on their cat, the evidence would be in the other persons folder, not in the cat owner's folder. Now I could've just made it so you can specify the user in the folder, like "(creator_id)/(evidence.png or jpg or whatever)" but I decided to kill two birds with one stone and instead just add a new column called "creator_id" which is the user ID of the person who made the case, so now the case index uses (creator_id)/(filepath) to load evidence. That fixed the issue where evidence for someone else's cat didn't work. Yay!
+  </p>
+
+  <p>
+    That's all I can think of, I probably made more updates but I can't name them right now. Sorry!
+  </p>
+
+  <p>
+    Either way my point with this whole project is 2 things: The silliest projects can teach you so many things (I learned SVG and CSS animation, direct connection to databases without an intermediate server for access control which is actually used in many real world examples, storage buckets and processing user created media, alot of UX, and postgres access control) and that you CAN have fun making apps.
+  </p>
+
+  <p>
+    Thanks for reading!
+  </p>
             ]]>
         </content>
     </entry>
