@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-04T14:38:44-06:00</updated>
+    <updated>2026-01-05T12:14:11-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -196,6 +196,19 @@
     <figure class="post__image post__image--center">
       <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot-from-2026-01-04-14-38-10.png" height="29" width="80" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-04-14-38-10-2xl.png 1920w">
       <figcaption>When hovering over minimize button</figcaption>
+    </figure>
+
+  <p>
+    EDIT 4: Jan 5 2026
+  </p>
+
+  <p>
+    Remember the refresh button? Gone. If you needed a recap, the refresh button completely refreshes the page to go to its "homescreen" because since these "windows" are just embedding other pages, the upload page for cases and cats is separate, and if you need to go back, the refresh button does that for you, but then the second I let one of my friends try the website, they immediately spammed the refresh button on the cat index, which reloaded the cat database data and images.. as I said, my provider has limits on that and I didn't appreciate them pushing it.. So I got a better idea, we're double iframing. Before, the add case and add cat button used to redirect you in the window to the case add or cat add page (the terminal looking ones) but now.. the case and cat index just iframe the add thing too. This made it so that I could just remove the refresh button entirely, and if the person doesn't want to upload a case or cat anymore, theres an X button within the case or cat index that iframed it.. It's a bit hard to explain the layering but basically I made it harder for people to spam reloads on the data.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Untitled-2025-11-07-1048-2.png" height="1035" width="1238" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-2xl.png 1920w">
+      <figcaption>Case upload iframed within the case index</figcaption>
     </figure>
 
   <p>
