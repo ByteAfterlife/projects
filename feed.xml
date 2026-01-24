@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-24T13:23:06-06:00</updated>
+    <updated>2026-01-24T13:29:05-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -360,8 +360,13 @@ olcPasswordHash: {SSHA}
 <pre class="line-numbers  language-html"><code>&lt;link rel="manifest" href="/manifest.json"&gt;</code></pre>
 
   <p>
-    And just like that, when users visit on Chrome, they get a popup asking if they want to install the webpage as if it were a real app! Epic. (if the popup doesn't appear, go to the 3 dots, scroll down, press add to home screen, then install)
+    And just like that, when users visit on Chrome, they get a popup asking if they want to install the webpage as if it were a real app! Epic. (if the popup doesn't appear, go to the 3 dots, scroll down, press add to home screen, then install). Here's a mobile screenshot of the cat index!
   </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot_20260124_132411_Chrome.jpg" height="2340" width="1080" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot_20260124_132411_Chrome-xs.jpg 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot_20260124_132411_Chrome-sm.jpg 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot_20260124_132411_Chrome-md.jpg 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot_20260124_132411_Chrome-lg.jpg 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot_20260124_132411_Chrome-xl.jpg 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot_20260124_132411_Chrome-2xl.jpg 1920w">
+      
+    </figure>
 
   <p>
     Either way my point with this whole project is 2 things: The silliest projects can teach you so many things (I learned SVG and CSS animation, direct connection to databases without an intermediate server for access control which is actually used in many real world examples, storage buckets and processing user created media, alot of UX, how to make a PWA, mobile version of a web app, postgres access control, optimization and saving resources, caching, and more) and that you can have fun making apps.
