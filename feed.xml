@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-23T18:56:02-06:00</updated>
+    <updated>2026-01-24T13:23:06-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -306,7 +306,65 @@ olcPasswordHash: {SSHA}
   </p>
 
   <p>
-    Either way my point with this whole project is 2 things: The silliest projects can teach you so many things (I learned SVG and CSS animation, direct connection to databases without an intermediate server for access control which is actually used in many real world examples, storage buckets and processing user created media, alot of UX, and postgres access control) and that you CAN have fun making apps.
+    EDIT 6: Jan 24 2026
+  </p>
+
+  <p>
+    I decided to make a web mobile app. So now all 3 are combined in a simple to use web mobile interface
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Screenshot-from-2026-01-24-13-13-23.png" height="875" width="404" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-24-13-13-23-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-24-13-13-23-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-24-13-13-23-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-24-13-13-23-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-24-13-13-23-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Screenshot-from-2026-01-24-13-13-23-2xl.png 1920w">
+      <figcaption>Also that cat visible in the center of the screen is the Social Cat-it logo</figcaption>
+    </figure>
+
+  <p>
+    It still works by iframing the cases, cat index, and leaderboard, but I optimized them to be able to handle any device's width, not just computer desktops. So all I had to do was just make the interface with the toolbar buttons at the bottom. But then I had to figure out how to know if someone is on mobile or desktop. So I used this javascript whenever someone goes to the main page:
+  </p>
+<pre class="line-numbers  language-html"><code>if (window.matchMedia('only screen and ((max-width: 767px) or (max-height: 767px))').matches || (/Mobi|Android/i.test(navigator.userAgent))) {
+            window.location.href = "/mobile.html"
+            throw new Error("Well well well, mobile person") // the throw new error is to prevent the desktop from continuing to load btw
+        } else {
+            return
+        }</code></pre>
+
+  <p>
+    Then I also learned yet another thing, how to make a website a PWA! From what I know, that makes it so your app can be installed as an actual app by android users, like as if you installed a real app from the play store. So all you really have to do is make a file called manifest.json, mine looks like:
+  </p>
+<pre class="line-numbers  language-html"><code>{
+  "name": "Social Cat-it",
+  "short_name": "SCIT",
+  "description": "silly :p",
+  "start_url": "/mobile.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+</code></pre>
+
+  <p>
+    Then on the mobile version, add to the &lt;head&gt; part:
+  </p>
+<pre class="line-numbers  language-html"><code>&lt;link rel="manifest" href="/manifest.json"&gt;</code></pre>
+
+  <p>
+    And just like that, when users visit on Chrome, they get a popup asking if they want to install the webpage as if it were a real app! Epic. (if the popup doesn't appear, go to the 3 dots, scroll down, press add to home screen, then install)
+  </p>
+
+  <p>
+    Either way my point with this whole project is 2 things: The silliest projects can teach you so many things (I learned SVG and CSS animation, direct connection to databases without an intermediate server for access control which is actually used in many real world examples, storage buckets and processing user created media, alot of UX, how to make a PWA, mobile version of a web app, postgres access control, optimization and saving resources, caching, and more) and that you can have fun making apps.
   </p>
 
   <p>
