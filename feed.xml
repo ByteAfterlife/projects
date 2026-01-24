@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-19T10:00:05-06:00</updated>
+    <updated>2026-01-23T18:56:02-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -296,6 +296,14 @@ olcPasswordHash: {SSHA}
       <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/16/Untitled-2025-11-07-1048-2.png" height="1035" width="1238" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-xs.png 640w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-sm.png 768w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-md.png 1024w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-lg.png 1366w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-xl.png 1600w ,https://byteafterlife.github.io/projects/media/posts/16/responsive/Untitled-2025-11-07-1048-2-2xl.png 1920w">
       <figcaption>Case upload iframed within the case index</figcaption>
     </figure>
+
+  <p>
+    EDIT 5: Jan 23 2026
+  </p>
+
+  <p>
+    I had to make more optimization changes because I wanna push myself to see just how much i can optimize it
+  </p>
 
   <p>
     Either way my point with this whole project is 2 things: The silliest projects can teach you so many things (I learned SVG and CSS animation, direct connection to databases without an intermediate server for access control which is actually used in many real world examples, storage buckets and processing user created media, alot of UX, and postgres access control) and that you CAN have fun making apps.
