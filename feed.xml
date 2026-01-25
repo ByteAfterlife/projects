@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-25T13:52:38-06:00</updated>
+    <updated>2026-01-25T13:58:04-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -63,7 +63,7 @@ func get_score() -&gt; int:
   </p>
 
   <p>
-    Fun P.S. So I was trying to export the game, then Google Play Protect wanted to scan it, I let it, it said the app is safe, then all I changed in godot was the app icon from the godot logo to the star texture, I tried reinstalling on my phone, and Google Play Protect said the app is harmful and tries to spy on SMS and emails.. ALL I CHANGED WAS THE ICON!? WHAT??
+    Fun P.S. So I was trying to export the game, then Google Play Protect wanted to scan it, I let it, it said the app is safe, then all I changed in godot was the app icon from the godot logo to the star texture, I tried reinstalling on my phone, and Google Play Protect said the app is harmful and tries to spy on SMS and emails.. ALL I CHANGED WAS THE ICON!? WHAT?? Also how would it? It doesnt request any permissions. Not even storage. It stores your highscore in app data, not on your filesystem. So it doesn't ask for any permissions, no email permissions, no sms reading permission, so how would it even do that? I don't understand.
   </p>
 
   <p>
