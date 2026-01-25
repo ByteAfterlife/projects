@@ -3,12 +3,79 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-24T13:29:05-06:00</updated>
+    <updated>2026-01-25T13:49:43-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
     <id>https://byteafterlife.github.io/projects</id>
 
+    <entry>
+        <title>My First Android Game</title>
+        <author>
+            <name>Byte</name>
+        </author>
+        <link href="https://byteafterlife.github.io/projects/my-first-android-game/"/>
+        <id>https://byteafterlife.github.io/projects/my-first-android-game/</id>
+
+        <updated>2026-01-25T13:32:22-06:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    So I asked my family "Do you guys have any idea what I should make?" One said I should make a car game where you have four lanes, and two cars, and there are objects along the path, stars and walls, when you touch a&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    So I asked my family "Do you guys have any idea what I should make?" One said I should make a car game where you have four lanes, and two cars, and there are objects along the path, stars and walls, when you touch a star, you get +1 score, if either car touches a wall, game over. So I took that and improved it a bit, I added high scores, and for each 5 stars you collect, it speeds everything up to make it more challenging. I used Godot 4 for this project, since I've been using godot to make some other games for a while now, but never exported to android. I had to solve a bunch of problems, such as most examples using syntax from Godot 3, settings, Android SDKs, and some other stuff. Here's a video of me playing.
+  </p>
+<div><video loading="lazy" controls> <source src="/projects/media/files/Screen_Recording_20260125_133541_Untitled Car Lane Game.mp4" type="video/mp4"></video></div>
+
+  <p>
+    It took me around 6 hours to make, but again this is my first time making a godot 4 game in around 4 months, and my first ever android game entirely. Anyway, some challenges and how I solved them:
+  </p>
+
+  <ul>
+    <li>Launching forced you into landscape mode (app was designed for portrait): It was a setting problem, I fixed it in project settings in Orientation</li><li>Couldn't export (couldn't find a keystore): Had to make something called a keystore to sign the app</li><li>When a car hit a wall and it said game over, it displayed the amount of stars only that car collected, not in total, for example if left car collected 10 stars, and right car collected 5, and right car hit a wall, it would show 5 as score, not 15 like it should: I made a global score manager</li>
+  </ul>
+<pre class="line-numbers  language-html"><code>extends Node
+
+var total_score = 0
+
+
+func add_score(amount: int):
+	total_score += amount
+
+
+func reset_score():
+	total_score = 0
+
+func get_score() -&gt; int:
+	return total_score
+</code></pre>
+
+  <p>
+    and made both cars use that each time they collect a star
+  </p>
+
+  <p>
+    Also on the game over screen, the fact the objects continue to appear is intentional, and I find it a cool effect while you stare at the game over screen.
+  </p>
+
+  <p>
+    Fun P.S. So I was trying to export the game, then Google Play Protect wanted to scan it, I let it, it said the app is safe, then all I changed in godot was the app icon from the godot logo to the star texture, I tried reinstalling on my phone, and Google Play Protect said the app is harmful and tries to spy on SMS and emails.. ALL I CHANGED WAS THE ICON!? WHAT??
+  </p>
+
+  <p>
+    Anyway if you want to try it, here's a <a href="https:///projects/media/files/export.apk">download link</a>, I haven't linked much of my projects on this blog because they usually involve some sort of social or interaction which is meant to be private, but this is a basic singleplayer game, so I don't see why not.
+  </p>
+
+  <p>
+    As always, thanks for reading!
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Keycloak and OpenLDAP is a perfect balance</title>
         <author>
@@ -728,54 +795,6 @@ olcPasswordHash: {SSHA}
 
   <p>
     UPDATE: Ok so something was very wrong, any user that joins gets moderator rights... so what I had to do is enable guests, then take a completely different approach. Instead of everyone in my family having an account on LDAP, I just have one, since I guess Jitsi just gives all LDAP users moderator in meetings. But now that guests are enabled, anyone can join the meeting. The only time they cant is when a moderator isn't in the meeting, but if a moderator is in the meeting, they can just join, now I could enable the lobby, which would 100% solve the problem, but what if I forget? Well I just discovered a <a href="https://github.com/jitsi-contrib/prosody-plugins/tree/main/lobby_autostart_on_owner">community made plugin called "lobby_autostart_on_owner"</a>&nbsp;(not responsible for external content) that automatically enables the lobby after a moderator joins to prevent users from joining without a moderator's permission. Gotta love open source. So the new flow: Only I have an account, the lobby is automatically enabled whenever I join so I don't have to remember to myself. Fine solution for now I guess, I also removed LLDAP completely since all that just for one user account is a bit too much, so now its just internally managed via that prosody internal database I mentioned earlier.
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>I made my own VPN (second worldwide project)</title>
-        <author>
-            <name>Byte</name>
-        </author>
-        <link href="https://byteafterlife.github.io/projects/i-made-my-own-vpn/"/>
-        <id>https://byteafterlife.github.io/projects/i-made-my-own-vpn/</id>
-
-        <updated>2025-11-30T13:00:44-06:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Everytime on my phone when I use my Mobile Data, or connect to an open wifi like at an airport or store, people say it's good to use a VPN, now when people think of VPNs they think of something that you pay for and&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    Everytime on my phone when I use my Mobile Data, or connect to an open wifi like at an airport or store, people say it's good to use a VPN, now when people think of VPNs they think of something that you pay for and it masks your IP anywhere you go, that's true, that's what a common VPN does. But, the way VPNs work is basically you pay to be able to connect to a network of computers that are told to forward your network requests (loading a webpage, making a search, logging in, etc) through them. It's actually really easy to make your own VPN server, and it probably costs less too, get a VPS (not a VPN) which is basically your own computer in the cloud that you rent, yes it's still paid, what do you expect. It functions just like you owned a computer at your house, except its in the cloud, now you run VPN software on it (OpenVPN, WireGuard, etc), set it up, connect, and you're done, now anywhere you go, your IP is now of the cloud computer that you're renting. However since I don't get funded for any of my projects, what if instead of running this VPN software on a cloud computer, I ran it on my own? I trust my own wifi router more than some random coffee shop wifi anyway, so I setup my very own WireGuard server, and then configured it on my phone, yes by the way I had to also setup port forwarding and firewalls, I'm trying to expand my knowledge of port forwarding and know better at making worldwide accessible servers from my computer, like the <a href="https://byteafterlife.github.io/projects/my-first-worldwide-project-mumble/">Mumble server</a> I made 2 days ago, which also involved port forwarding and firewall config. Anyway back to WireGuard, now, here's the flow
-  </p>
-
-  <p>
-    My phone connects to mobile data or a public wifi &gt; I turn connect to my laptop's worldwide accessible VPN &gt; Any network traffic I do like searching or loading a webpage is extremely hard to be seen by the admins of the wifi I connected to &gt; My laptop makes the network request using my router at home &gt; router completes the request &gt; sends it to my laptop which sends it back to my phone, done.
-  </p>
-
-  <p>
-    Here's an example if I wanted to search "hi" on google: Phone searches hi (connected to my laptop VPN) &gt; Laptop searches it up using the home Wifi, as if I was at home and I searched "hi" using the home wifi &gt; the router responds and gives me the results &gt; my laptop returns it back to my phone which could be wherever in the world.
-  </p>
-
-  <p>
-    Of course I used docker to keep my docker skills sharp.
-  </p>
-
-  <p>
-    Heres a mobile screenshot
-  </p>
-
-    <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://byteafterlife.github.io/projects/media/posts/8/Screenshot_20251130_155702_WireGuard.jpg" height="2340" width="1080" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-xs.jpg 640w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-sm.jpg 768w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-md.jpg 1024w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-lg.jpg 1366w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-xl.jpg 1600w ,https://byteafterlife.github.io/projects/media/posts/8/responsive/Screenshot_20251130_155702_WireGuard-2xl.jpg 1920w">
-      
-    </figure>
-
-  <p>
-    This is now my second worldwide accessible project EVER. And only 3 days after my first one. Woo!
   </p>
             ]]>
         </content>
