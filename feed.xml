@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-25T14:04:39-06:00</updated>
+    <updated>2026-01-25T14:58:54-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -57,6 +57,10 @@ func get_score() -&gt; int:
   <p>
     and made both cars use that each time they collect a star
   </p>
+
+  <ul>
+    <li>When you hit a wall and get game over, it would continue the game and just destroy the wall, you can still collect stars and stuff, and when you hit another wall, another game over screen would overlap the first one and it would break, so I tried pausing the game using godot's .paused boolean, but I couldn't unpause it, so I just made it delete the Switch buttons and the cars</li><li>Except the script that was tasked with doing the deletions (the buttons and the cars) was attached to the car, so it basically deleted itself, so I made it just make the car invisible and delete the collision so it makes it basically gone, but it doesnt actually delete the car. Then the retry button makes the car visible.</li>
+  </ul>
 
   <p>
     Also on the game over screen, the fact the objects continue to appear is intentional, and I find it a cool effect while you stare at the game over screen.
