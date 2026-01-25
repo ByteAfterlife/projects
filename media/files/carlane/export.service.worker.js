@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1769377054|67710636';
+const CACHE_VERSION = '1769377883|272272433';
 /** @type {string} */
 const CACHE_PREFIX = 'Untitled Car Lan-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
