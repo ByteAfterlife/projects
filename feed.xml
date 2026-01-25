@@ -3,7 +3,7 @@
     <title>Byte&#x27;s Projects</title>
     <link href="https://byteafterlife.github.io/projects/feed.xml" rel="self" />
     <link href="https://byteafterlife.github.io/projects" />
-    <updated>2026-01-25T15:48:28-06:00</updated>
+    <updated>2026-01-25T16:03:50-06:00</updated>
     <author>
         <name>Byte</name>
     </author>
@@ -71,7 +71,7 @@ func get_score() -&gt; int:
   </p>
 
   <p>
-    Anyway if you want to try it, here's a <a href="https://byteafterlife.github.io/projects/media/files/carlane/export.html">web link</a>&nbsp;(I was advised to not publish the APK online, so I exported it as a web app for this blog. It's also available as a PWA, which on chrome downloads it like an actual offline working app), I haven't linked much of my projects on this blog because they usually involve some sort of social or interaction which is meant to be private, but this is a basic singleplayer game, so I don't see why not.
+    Anyway if you want to try it, here's a <a href="https://byteafterlife.github.io/projects/media/files/carlane/export.html">web link</a>&nbsp;(I was advised to not publish the APK online, so I exported it as a web app for this blog. It's also available as a <a href="https://web.dev/learn/pwa/installation/">PWA</a>, which on chrome downloads it like an actual offline working app), I haven't linked much of my projects on this blog because they usually involve some sort of social or interaction which is meant to be private, but this is a basic singleplayer game, so I don't see why not.
   </p>
 
   <p>
